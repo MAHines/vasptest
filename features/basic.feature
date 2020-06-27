@@ -19,13 +19,13 @@ Feature: Basic tests
     Scenario: Cu-fcc
         Given that the POTCAR MD5 is c0bee2102db6fbd2eac4c56c950af4c4
         When I run VASP with a maximum of 8 ranks
-        Then the total energy should be -3.750832 +/- 1.0e-5 eV
+        Then the total energy should be -3.750832 +/- 5.0e-5 eV
         and self consistency should be reached in 11 iterations
         and the Fermi energy should be 6.927426 +/- 0.01 eV
-        and the pressure should be -61.07 +/- 0.1 kB
-        and the xx component of the stress tensor should be -61.06556 +/- 0.1 kB
-        and the yy component of the stress tensor should be -61.06556 +/- 0.1 kB
-        and the zz component of the stress tensor should be -61.06556 +/- 0.1 kB
+        and the pressure should be -61.07 +/- 0.5 kB
+        and the xx component of the stress tensor should be -61.06556 +/- 0.5 kB
+        and the yy component of the stress tensor should be -61.06556 +/- 0.5 kB
+        and the zz component of the stress tensor should be -61.06556 +/- 0.5 kB
         and the xy component of the stress tensor should be 0.0 +/- 0.01 kB
         and the point group symmetry should be O_h
         and the XML output should be valid
