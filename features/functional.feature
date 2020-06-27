@@ -6,7 +6,7 @@ Feature: Functional
         Given that the POTCAR MD5 is 908f33839673b281011b6fe54e91cf3e
         When I run VASP with a maximum of 16 ranks
         Then the OUTCAR file should contain "QP shifts <psi_nk| G(iteration)W_0 |psi_nk>" 
-        and the highest occupied quasi-particle energy should be 5.1537 +/- 0.001 eV
+        and the highest occupied quasi-particle energy should be 5.1537 +/- 0.01 eV
 
     # Run a hybrid calculations
     Scenario: Si-hybrid  
